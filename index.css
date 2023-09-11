@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Barlow:wght@300;500&family=Orbitron:wght@400;700;800&family=Poppins:wght@300&display=swap');
+
+:root {
+    --main-color: #A9907E;
+    --green: #ABC4AA;
+    --dark-brown: #675D50;
+    --bej: #f8f3e8;
+    --white: #fff;
+    --bordeer: .1rem solid black;
+    --bax-shadow: 0. 5rem 1rem rgba(0, 0, 0, .4);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+*:selection {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+::-webkir-scrollbar {
+    height: 5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+
+}
+
+html {
+    font-size: 100.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    box-shadow: var(--bax-shadow);
+}
+
+section {
+    padding: 2rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 1000;
+}
+
+.flex .logo .logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--bax-shadow);
+}
+
+.header .flex .navbar a {
+    margin: 0.3rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+
+}
+
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.home-bg {
+    background: linear-gradient(90deg, rgb(2, 2, 2), transparent 70%), url("Caffe Img/ana-page.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+
+}
+
+.home-bg .home {
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home-bg .home .content {
+
+    text-align: center;
+}
+
+.home-bg .home .content h3 {
+    font-size: 2rem;
+    color: white;
+
+}
+
+
+.home-bg .home .content p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+
+}
+
+.btn {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: var(--bej);
+
+}
+
+.content .btn:hover {
+    background-color: var(--main-color);
+}
+
+.about {
+    display: flex;
+
+    gap: 2rem;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+.about .image img {
+    height: 100%;
+    width: 50%;
+
+
+
+}
+
+.about .content {
+    margin-top: 120px;
+    margin-right: 50px;
+}
+
+.content .btn {
+    margin-top: 5px;
+    color: var(--white);
+    background-color: #dacbb9;
+    padding: 10px 15px;
+    font-weight: lighter;
+
+}
+
+.about .content h3 {
+    font-size: 1.5rem;
+}
+
+.about .content p {
+    padding: 1rem 0;
+
+    color: grey
+}
+
+
+.heading {
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.heading img {
+    height: 15rem;
+
+
+}
+
+.heading h3 {
+    font-size: 2rem;
+}
+
+.facility .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.facility .caffe2 {
+
+
+    margin-left: 250px;
+
+
+}
+
+
+
+
+.box-container .box h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.box-container .box p {
+    text-align: center;
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    gap: 1.5;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.menu .box-container .box {
+    text-align: center;
+}
+
+.menu .box-container .box img {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.menu .box-container .box h2 {
+    font-weight: lighter;
+
+
+}
+
+.heading h3 {
+    margin-bottom: 15px;
+}
+
+.gallery.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 16rem);
+    gap: 1.5;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gallery .box-container img {
+    height: 350px;
+    width: 250px;
+    padding-right: 10px;
+}
+
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.team .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.team .box-container .box h3 {
+    font-size: 1rem;
+}
+
+
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact .row img {
+    width: 450px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.contact .row form {
+    flex: 1 1 30rem;
+    border: #675D50 solid 1px;
+    padding: 3rem;
+    text-align: center;
+
+
+}
+
+.contact .row form .box {
+
+    width: 100%;
+    border: #675D50 solid 1px;
+    padding: 1rem;
+    margin: 10px;
+
+}
+
+
+.contact .row form .btn {
+
+    font-size: 1rem;
+    border-radius: 10px;
+
+
+
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.footer .box-container .box {
+    text-align: center;
+}
+
+.footer .box-container .box i {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--dark-brown);
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+
+}
+
+.footer .box-container .box h3 {
+    font-size: 2rem;
+    margin: 0.5 0;
+
+}
+
+.footer .box-container .box p {
+    line-height: 6px;
+    font-size: 1rem;
+    color: #948c83;
+}
+
+.footer .box-container {
+    padding-top: 115px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+    #menu-btn {
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--dark-brown);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    .header .flex .navbar .active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .home-bg {
+        background: linear-gradient(90deg, rgb(2, 2, 2), transparent 70%), url("Caffe Img/ana-page-mobile.webp") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+
+    .home-bg .home .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .home-bg .home .content p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .contact .row img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact .row form {
+        padding: 2rem;
+    }
+
+    .contact .row form .box {
+        padding: 1rem;
+        margin: 10px;
+    }
+
+    .contact .row form .btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 769px) {
+    .about .image img {
+        margin: 30px;
+        margin-top: 60px;
+        height: auto; /* Resimleri otomatik boyuta sığdırın */
+        width: 100%; /* Resimleri genişliği yüzdeye göre ayarlayın */
+    }
+
+    .menu .box-container img {
+        height: auto; /* Resimleri otomatik boyuta sığdırın */
+        width: 100%; /* Resimleri genişliği yüzdeye göre ayarlayın */
+        padding-right: 10px;
+    }
+
+    .contact .row img {
+        width: 100%; /* Resimleri genişliği yüzdeye göre ayarlayın */
+        height: auto; /* Resimleri otomatik boyuta sığdırın */
+        background-size: cover;
+        background-position: center;
+    }
+}
